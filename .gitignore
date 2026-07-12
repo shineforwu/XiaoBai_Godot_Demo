@@ -1,0 +1,18 @@
+# System/tool-specific ignores
+*.DS_Store
+
+
+
+# Ignore Godot engine cache and configuration folder
+**.godot/
+*.translation
+
+**/addons/
+**.vscode/
+
+# Ignore build output directories
+**/bin/
+**/obj/
+
+#Output
+Output/**

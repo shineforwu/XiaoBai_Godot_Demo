@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bptlriuplgd8l"]
+
+[ext_resource type="PackedScene" uid="uid://bni07vlnuw2d6" path="res://Play.tscn" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://b8e4cmg61l5oj" path="res://Main.cs" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://civwwd1l6wi4" path="res://Wall.tscn" id="3_r0du0"]
+
+[node name="Main" type="Node2D" unique_id=1843788806 node_paths=PackedStringArray("Player_Arr", "Button_Arr")]
+script = ExtResource("1_uu6xs")
+Player_Arr = [NodePath("Play"), NodePath("Play2")]
+Button_Arr = [NodePath("Reset_Btn"), NodePath("Move_1_Btn"), NodePath("Move_2_Btn")]
+
+[node name="Play" parent="." unique_id=1597030014 instance=ExtResource("1_glv2v")]
+modulate = Color(0.6046796, 0.55317837, 0.8031067, 1)
+position = Vector2(100, 100)
+
+[node name="Play2" parent="." unique_id=16220425 instance=ExtResource("1_glv2v")]
+modulate = Color(0.9627523, 0.41043428, 0.48816383, 1)
+position = Vector2(100, 400)
+
+[node name="Reset_Btn" type="Button" parent="." unique_id=1035931135]
+offset_left = 35.0
+offset_top = 513.0
+offset_right = 162.0
+offset_bottom = 597.0
+text = "Reset"
+
+[node name="Move_1_Btn" type="Button" parent="." unique_id=1326160608]
+offset_left = 224.0
+offset_top = 520.0
+offset_right = 363.0
+offset_bottom = 592.0
+text = "Move 1"
+
+[node name="Move_2_Btn" type="Button" parent="." unique_id=1543704154]
+offset_left = 420.0
+offset_top = 520.0
+offset_right = 559.0
+offset_bottom = 592.0
+text = "Move 2"
+
+[node name="Wall" parent="." unique_id=1918660235 instance=ExtResource("3_r0du0")]
+position = Vector2(900, 252)
+
+[node name="Wall" parent="Wall" unique_id=1671738871 instance=ExtResource("3_r0du0")]
+position = Vector2(900, 252)
