@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dlv01dx4fs581"]
+
+[ext_resource type="Script" uid="uid://u8skilfxqjmu" path="res://Run_Win.cs" id="1_op2q4"]
+[ext_resource type="PackedScene" uid="uid://vqchkx424ex" path="res://Player.tscn" id="1_y4h3g"]
+
+[node name="Node2D" type="Node2D" unique_id=563992981 node_paths=PackedStringArray("Player_Arr", "Attack_Btn")]
+script = ExtResource("1_op2q4")
+Player_Arr = [NodePath("Player"), NodePath("Player2")]
+Attack_Btn = NodePath("Button")
+
+[node name="Player" parent="." unique_id=473122447 instance=ExtResource("1_y4h3g")]
+position = Vector2(224, 266)
+
+[node name="Player2" parent="." unique_id=740180626 instance=ExtResource("1_y4h3g")]
+position = Vector2(409, 273)
+
+[node name="Button" type="Button" parent="." unique_id=313989822]
+offset_left = 105.0
+offset_top = 484.0
+offset_right = 169.0
+offset_bottom = 529.0
+text = "Attack"
