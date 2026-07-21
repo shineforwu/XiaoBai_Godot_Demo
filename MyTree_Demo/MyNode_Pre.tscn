@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://2vwgojqq5ixe"]
+
+[ext_resource type="Texture2D" uid="uid://bxco3uc2ih0jg" path="res://Line1.png" id="1_fdt62"]
+[ext_resource type="Script" uid="uid://0lsv1olci5b8" path="res://MyNode_Pre.cs" id="1_mqnsb"]
+[ext_resource type="Texture2D" uid="uid://bcekac161ee23" path="res://Line2.png" id="2_mqnsb"]
+
+[node name="MyNode_Pre" type="Node2D" unique_id=908006110 node_paths=PackedStringArray("MyBranch_Arr", "MyBranch_L1_Arr", "MyBranch_L2_Arr", "Branch_Arr_Pre", "Name_LB")]
+script = ExtResource("1_mqnsb")
+MyBranch_Arr = [NodePath("Branch_Arr_Pre/B0"), NodePath("Branch_Arr_Pre/B1"), NodePath("Branch_Arr_Pre/B2"), NodePath("Branch_Arr_Pre/B3"), NodePath("Branch_Arr_Pre/B4"), NodePath("Branch_Arr_Pre/B5"), NodePath("Branch_Arr_Pre/B6"), NodePath("Branch_Arr_Pre/B7")]
+MyBranch_L1_Arr = [NodePath("Branch_Arr_Pre/B0/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B1/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B2/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B3/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B4/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B5/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B6/Scale&Rotation/BL1"), NodePath("Branch_Arr_Pre/B7/Scale&Rotation/BL1")]
+MyBranch_L2_Arr = [NodePath("Branch_Arr_Pre/B0/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B1/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B3/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B3/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B4/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B5/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B6/Scale&Rotation/BL2"), NodePath("Branch_Arr_Pre/B7/Scale&Rotation/BL2")]
+Branch_Arr_Pre = NodePath("Branch_Arr_Pre")
+Name_LB = NodePath("Name_LB")
+
+[node name="Branch_Arr_Pre" type="Marker2D" parent="." unique_id=1503945444]
+
+[node name="B0" type="Marker2D" parent="Branch_Arr_Pre" unique_id=467015071]
+position = Vector2(-256, -256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B0" unique_id=2043154937]
+rotation = 0.7853982
+scale = Vector2(1.414, 1)
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B0/Scale&Rotation" unique_id=1667630680]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B0/Scale&Rotation" unique_id=1080624897]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B1" type="Marker2D" parent="Branch_Arr_Pre" unique_id=572827296]
+position = Vector2(0, -256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B1" unique_id=1026132395]
+rotation = 1.5707964
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B1/Scale&Rotation" unique_id=178062962]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B1/Scale&Rotation" unique_id=2124189089]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B2" type="Marker2D" parent="Branch_Arr_Pre" unique_id=1246846791]
+position = Vector2(256, -256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B2" unique_id=1940829466]
+rotation = 2.3561945
+scale = Vector2(1.414, 1)
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B2/Scale&Rotation" unique_id=1937550362]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B2/Scale&Rotation" unique_id=1526902428]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B3" type="Marker2D" parent="Branch_Arr_Pre" unique_id=2031643663]
+position = Vector2(256, 0)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B3" unique_id=1661433714]
+rotation = 3.1415927
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B3/Scale&Rotation" unique_id=831729713]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B3/Scale&Rotation" unique_id=1398793730]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B4" type="Marker2D" parent="Branch_Arr_Pre" unique_id=308709118]
+position = Vector2(256, 256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B4" unique_id=1090876156]
+rotation = -2.3561945
+scale = Vector2(1.414, 1.414)
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B4/Scale&Rotation" unique_id=1849400035]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B4/Scale&Rotation" unique_id=93785780]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B5" type="Marker2D" parent="Branch_Arr_Pre" unique_id=960728869]
+position = Vector2(0, 256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B5" unique_id=676402040]
+rotation = -1.5707964
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B5/Scale&Rotation" unique_id=681961717]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B5/Scale&Rotation" unique_id=1734122635]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B6" type="Marker2D" parent="Branch_Arr_Pre" unique_id=1368144295]
+position = Vector2(-256, 256)
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B6" unique_id=1896856112]
+rotation = -0.7853982
+scale = Vector2(1.414, 1)
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B6/Scale&Rotation" unique_id=1684525839]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B6/Scale&Rotation" unique_id=1334494997]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="B7" type="Marker2D" parent="Branch_Arr_Pre" unique_id=903731039]
+position = Vector2(-256, 0)
+rotation = 3.1415927
+
+[node name="Scale&Rotation" type="Node2D" parent="Branch_Arr_Pre/B7" unique_id=758028405]
+rotation = 3.1415927
+
+[node name="BL1" type="Sprite2D" parent="Branch_Arr_Pre/B7/Scale&Rotation" unique_id=1282982457]
+texture = ExtResource("1_fdt62")
+offset = Vector2(128, 0)
+
+[node name="BL2" type="Sprite2D" parent="Branch_Arr_Pre/B7/Scale&Rotation" unique_id=332311188]
+texture = ExtResource("2_mqnsb")
+offset = Vector2(128, 0)
+
+[node name="Img" type="Sprite2D" parent="." unique_id=1217278333]
+
+[node name="Button" type="Button" parent="." unique_id=140853687]
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Name_LB" type="Label" parent="." unique_id=1163890462]
+offset_left = -29.0
+offset_top = -67.0
+offset_right = 11.0
+offset_bottom = -44.0
+text = "Name"

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://beh31itmijh41"]
+
+[ext_resource type="Script" uid="uid://yhb0n2wgkgg7" path="res://MyTree_Pre.cs" id="1_x4txk"]
+
+[node name="MyTree_Pre" type="Node2D" unique_id=1702945677]
+script = ExtResource("1_x4txk")
