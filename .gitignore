@@ -6,7 +6,7 @@
 # Ignore Godot engine cache and configuration folder
 **.godot/
 *.translation
-
+**TileMapLayer_Demo_11/
 **/addons/
 **.vscode/
 
